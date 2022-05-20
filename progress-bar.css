@@ -1,0 +1,32 @@
+/* (A) PROGRESS BAR WRAPPER */
+.prog-wrap * {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+}
+.prog-wrap {
+  position: relative;
+  border: 3px solid #000000;
+  max-width: 300px; /* OPTIONAL */
+}
+.prog-wrap, .prog-bar, .prog-percent { height: 50px; }
+
+/* (B) PROGRESS BAR & PERCENTAGE */
+.prog-bar, .prog-percent {
+  position: absolute;
+  top: 0; left: 0;
+}
+
+/* (C) PERCENTAGE INDICATOR */
+.prog-percent {
+  display: flex;
+  align-items: center; justify-content: center;
+  width: 100%;
+  z-index: 2;
+}
+
+/* (D) PROGRESS BAR */
+.prog-bar {
+  width: 0;
+  background: #0086ff;
+  transition: width 0.5s;
+}

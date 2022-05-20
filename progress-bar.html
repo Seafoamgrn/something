@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Progress Bar Demo</title>
+
+    <!-- (A) CSS + JS -->
+    <link rel="stylesheet" href="progress-bar.css"/>
+    <script src="progress-bar.js"></script>
+  </head>
+  <body>
+    <!-- (B) EMPTY DIV -->
+    <div id="demo"
+     style="border-radius:12px;color:red;background-color:"> </div>
+
+    <!-- (C) CREATE PROGRESS BAR -->
+    <script>
+    // (C1) GENERATE PROGRESS BAR
+    let demo = progbar(document.getElementById("demo"));
+
+    // (C2) SET PROGRESS PERCENTAGE
+    demo.set([150/500]*100);
+    </script>
+  </body>
+</html>
